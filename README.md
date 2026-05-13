@@ -42,3 +42,7 @@ Curso Agregação de Logs com Promtail, Grafana, e Loki no nextwave(LuisDEV)
  - Monolitico Escalavel
  - Monolitico
  - Microservice
+
+### Promtail
+ - É um agente que coleta os logs do servidor local e envia para o Loki
+ - O Promtail roda em cada maquina que precisa ser monitorada, filtra, transforma e enriquece o log
