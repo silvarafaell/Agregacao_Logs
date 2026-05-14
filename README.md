@@ -46,3 +46,16 @@ Curso Agregação de Logs com Promtail, Grafana, e Loki no nextwave(LuisDEV)
 ### Promtail
  - É um agente que coleta os logs do servidor local e envia para o Loki
  - O Promtail roda em cada maquina que precisa ser monitorada, filtra, transforma e enriquece o log
+
+### Grafana
+ - É uma plataforma utilizada para análise e criação de dashboards
+ - Suporte a integração com vários tipos de banco de dados
+ - OpenSource e SaaS
+
+### Boas práticas
+
+### Niveis de Logs
+ - Error: Precisa de atenção imediata, ocorreu alguma falha no sistema e o processo/fluxo foi impactado
+ - Warn: Ocorreram falhas no sistema e mesmo assim o processo/fluxo pode continuar
+ - Info: Informações de negocio e de fluxo interessantesao monitoramento
+ - Debug: Informações de negocio/fluxo importantes para monitoramento
