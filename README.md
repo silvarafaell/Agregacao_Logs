@@ -59,3 +59,12 @@ Curso Agregação de Logs com Promtail, Grafana, e Loki no nextwave(LuisDEV)
  - Warn: Ocorreram falhas no sistema e mesmo assim o processo/fluxo pode continuar
  - Info: Informações de negocio e de fluxo interessantesao monitoramento
  - Debug: Informações de negocio/fluxo importantes para monitoramento
+
+### Mensagens de log
+ - Sempre escrever mensagens de log que façam sentido
+   - Erro ao salvar usuario user.name no banco de ddos database.name request.return
+   - ao contrario de Erro ao salvar no banco de dados
+
+### Estrutura de log
+ - Utilizar uma estrutura de log no formato json é melhor para parsear e realizar consultas
+ - Possua uma estrutura bem definida com todas as aplicações da empresa para que tenham melhores beneficios ao realizarem algum trobleshooting
