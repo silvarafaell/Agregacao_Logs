@@ -1,0 +1,12 @@
+loki:
+  commonConfig:
+    replication_factor: 1
+  storage:
+    type: 'filesystem'
+monitoring:
+  selfMonitoring:
+    enabled: true
+  lokiCanary:
+    enabled: true
+singleBinary:
+  replicas: 1

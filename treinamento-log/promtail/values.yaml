@@ -1,0 +1,26 @@
+config:
+  enabled: true
+  clients:
+    - url: http://loki-gateway.loki.svc.cluster.local/loki/api/v1/push
+      tenant_id: self-monitoring
+      external_labels:
+        cluster: observability
+  logFormat: json
+  snippets:
+    pipelineStages:
+      - cri: {}
+      - match:
+          selector: '{app=~".+"}'
+          stages:
+            - json:
+                expressions:
+                  status_code: 
+                  log_level:
+            - labels:
+                status_code:
+                log_level:
+            - labeldrop:
+                - node_name
+
+configmap:
+  enabled: true

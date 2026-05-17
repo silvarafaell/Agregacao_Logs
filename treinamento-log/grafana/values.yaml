@@ -1,0 +1,19 @@
+adminUser: admin
+adminPassword: admin
+
+datasources:
+  datasources.yaml:
+   apiVersion: 1
+   datasources:
+   - name: Loki
+     type: loki
+     url: http://loki.loki.svc.cluster.local:3100
+     access: proxy
+     isDefault: true
+     jsonData:
+        httpHeaderName1: 'X-Scope-OrgID'
+     secureJsonData:
+        httpHeaderValue1: 'self-monitoring'
+
+
+namespaceOverride: grafana
